@@ -1,0 +1,22 @@
+<p>blog-display works!</p>
+
+<div>{{blogs | json}}</div>
+
+
+    <div class="example-container">
+        <mat-form-field appearance="fill">
+          <mat-label>Title</mat-label>
+          <input matInput #title>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+          <mat-label>Text Area</mat-label>
+          <textarea matInput #content></textarea>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button (click)="addBlogPost(title.value, content.value)" color='primary'>Submit Blog Post</button>
+      </div>
+
+      <button mat-raised-button (click)="logout()" color='warn'>Logout</button>
+
+      <button mat-raised-button routerLink="/user" color='secondary'>User Page</button>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "groupblogproject-795b9": {
+      "hosting": {
+        "groupBlog": [
+          "groupblogproject-795b9"
+        ]
+      }
+    }
+  }
+}
